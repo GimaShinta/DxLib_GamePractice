@@ -34,7 +34,7 @@ int NumberImage[NUMBER_IMAGE_MAX]; //数字用画像
 * 引　数：なし
 * 戻り値：エラー情報
 *********************************************/
-int GameMainScene_initialize(void)
+int GameMainScene_Initialize(void)
 {
 	int ret = 0;
 	int i;

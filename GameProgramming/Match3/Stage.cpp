@@ -1,4 +1,4 @@
-#include"Stage,h"
+#include"Stage.h"
 #include"DxLib.h"
 #include"InputControl.h"
 /********************************************

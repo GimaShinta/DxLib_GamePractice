@@ -147,7 +147,7 @@ void StageDraw(void) {
 	//ƒuƒƒbƒN‚ğ•`‰æ
 	for (int i = 0; i < HEIGHT; i++)
 	{
-		for (int j = 0; j < WIDHT; j++)
+		for (int j = 0; j < WIDTH; j++)
 		{
 			if (Block[i][j].flg == TRUE && Block[i][j].image != NULL)
 			{

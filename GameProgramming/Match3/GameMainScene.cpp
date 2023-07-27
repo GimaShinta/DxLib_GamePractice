@@ -103,13 +103,13 @@ void GameMainScene_Update(void)
 	//制限時間がなくなったら、ゲームオーバーに還移する
 	if (GameTime < 0)
 	{
-		Chenge_Scene(E_GAME_OVER);
+		Change_Scene(E_GAME_OVER);
 	}
 
 	//ミッションを達成したら、ゲームクリアに還移する。
 	if (Get_StageClearFlag())
 	{
-		Chenge_Scene(E_GAME_CLEAR);
+		Change_Scene(E_GAME_CLEAR);
 	}
 }
 
@@ -121,7 +121,7 @@ void GameMainScene_Update(void)
 void GameMainScene_Draw(void)
 {
 	int PosX = 600;
-	int tmp_level = GameLavel;
+	int tmp_level = GameLevel;
 	int tmp_score = Get_StageScore();
 
 	//ステージを描画

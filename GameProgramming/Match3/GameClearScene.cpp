@@ -66,7 +66,7 @@ void GameClearScene_Update(void)
 		}
 		else
 		{
-			PlaySoundMem(GameClaerSE, DX_PLAYTYPE_BACK);
+			PlaySoundMem(GameClearSE, DX_PLAYTYPE_BACK);
 			GameClearFlag = TRUE;
 		}
 	}

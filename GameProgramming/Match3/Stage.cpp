@@ -47,6 +47,7 @@ T_CURSOR Select[3];               //セレクトカーソル座標
 int Item[ITEM_MAX];
 int ClickStatus;
 int Stage_State;
+int Stage_Score;
 int Stage_Mission;
 int ClearFlag;
 

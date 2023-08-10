@@ -387,9 +387,9 @@ void MoveBlock(void)
 		{
 			if (Block[i][j].image == 0)
 			{
-				for (k = i; i > 0; k--)
+				for (k = i; k > 0; k--)
 				{
-					Block[k][j].image=Block[k-1][j].image;
+					Block[k][j].image = Block[k - 1][j].image;
 					Block[k - 1][j].image = 0;
 				}
 			}

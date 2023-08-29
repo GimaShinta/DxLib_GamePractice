@@ -38,7 +38,7 @@ int GameMainScene_Initialize(void)
 {
 	int ret = 0;
 	int i;
-	
+
 	//‰æ‘œ“Ç‚İ
 	LoadDivGraph("images/number.png", NUMBER_IMAGE_MAX, NUMBER_IMAGE_MAX, 1, 60, 120, NumberImage);
 

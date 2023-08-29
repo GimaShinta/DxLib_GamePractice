@@ -77,12 +77,12 @@ int StageInitialize(void)
 	int i;
 
 	//âÊëúì«Ç›çûÇ›
-	LoadDivGraph("image/block.png", BLOCK_IMAGE_MAX, BLOCK_IMAGE_MAX, 1,
+	LoadDivGraph("images/block.png", BLOCK_IMAGE_MAX, BLOCK_IMAGE_MAX, 1,
 		BLOCKSIZE, BLOCKSIZE, BlockImage);
 	StageImage = LoadGraph("images/stage.png");
 
 	//âπåπì«Ç›çûÇ›
-	ClickSE = LoadSoundMem("sounds/click_se_mp3");
+	ClickSE = LoadSoundMem("sounds/click_se.mp3");
 	FadeOutSE = LoadSoundMem("sounds/fadeout_se.mp3");
 	MoveBlockSE = LoadSoundMem("sounds/moveblock_se.mp3");
 

@@ -142,6 +142,7 @@
     <ClCompile Include="TitleScene.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Block_h.h" />
     <ClInclude Include="FreamControl.h" />
     <ClInclude Include="GameClearScene.h" />
     <ClInclude Include="GameMainScene.h" />

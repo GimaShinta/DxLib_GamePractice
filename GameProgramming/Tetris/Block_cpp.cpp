@@ -1,6 +1,6 @@
 #include "Block.h"
 #include "DxLib.h"
-#include "InoutControl.h"
+#include "InputControl.h"
 
 /*****************************************************
 *マクロ定義
@@ -90,7 +90,7 @@ const int C_BLOCK_TABLE[BLOCK_TYPE_MAX][BLOCK_TROUT_SIZE][BLOCK_TROUT_SIZE] = {
 *変数宣言
 *****************************************************/
 int BlockImage[E_BLOCK_IMAGE_MAX];                          //ブロック画像
-BLOCK_STATE Fild[FIELD_HEIGHT][FIELD_WIDTH];                //フィールド配列
+BLOCK_STATE Field[FIELD_HEIGHT][FIELD_WIDTH];                //フィールド配列
 BLOCK_STATE Next[BLOCK_TROUT_SIZE][BLOCK_TROUT_SIZE];       //待機状態のブロック
 BLOCK_STATE Stock[BLOCK_TROUT_SIZE][BLOCK_TROUT_SIZE];      //ストックのブロック
 BLOCK_STATE DropBlock[BLOCK_TROUT_SIZE][BLOCK_TROUT_SIZE];  //落ちるブロック
@@ -101,7 +101,7 @@ int WaitTime;          //待機時間
 int Stock_Flg;         //ストックフラグ
 int Generate_Flg;      //生成フラグ
 int DeleteLine;        //消したラインの数
-int SoundEffeck[3];    // SE
+int SoundEffect[3];    // SE
 
 /*****************************************************
 *プロトタイプ宣言

@@ -14,7 +14,7 @@
 *****************************************************/
 typedef struct
 {
-	int rand;                            //ランク
+	int rank;                            //ランク
 	char name[RANKING_NAME_LEN];         //名刺
 	int score;                           //スコア
 }T_RANKING;
@@ -28,7 +28,7 @@ typedef struct
 /*****************************************************
 *グローバル変数宣言
 *****************************************************/
-T_RANKING Ranking_Date[RANKING_MAX];      //ランキングデータ
+T_RANKING Ranking_Data[RANKING_MAX];      //ランキングデータ
 T_RANKING New_Score;                      //新しいスコアデータ
 int DispMode;                             //表示モード
 
@@ -83,7 +83,7 @@ void RankingScene_Update(void)
 	case RANKING_INPUT_MODE:
 		ranking_input_name();
 		break;
-	case RANGING_DISP_MODE:
+	case RANKING_DISP_MODE:
 	default:
 		if (GetButtonDown(XINPUT_BUTTON_B))
 		{
@@ -123,7 +123,7 @@ void RankingScene_Draw(void)
 * 引　数：なし
 * 戻り値：なし
 *****************************************************/
-void Set_RankingMode(int modo)
+void Set_RankingMode(int mode)
 {
 	DispMode = mode;
 }
@@ -155,13 +155,13 @@ void file_read(void)
 	{
 		OutputDebugString("ファイルが読み込めません");
 		OutputDebugString("ファイルを生成します");
-		file_wrete();
+		file_write();
 	}
 	else
 	{
 		for (i = 0; i < RANKING_MAX; i++)
 		{
-			fscanf_s(fp, "%2d,%[^,],%10d/        n", &Ranking_Data[i].rank, Ranking_Data[i].name, RANKING_NAME_LEN, &Ranking_Date[i].score);
+			fscanf_s(fp, "%2d,%[^,],%10d/        n", &Ranking_Data[i].rank, Ranking_Data[i].name, RANKING_NAME_LEN, &Ranking_Data[i].score);
 		}
 
 

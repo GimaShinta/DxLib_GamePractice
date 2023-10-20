@@ -39,7 +39,7 @@ LPSTR lpCmdLIne, _In_ int nShowCmd)
 	ChangeWindowMode(TRUE);
 
 	//ウィンドウサイズの決定
-	SetGraphMode(SCREEN_WIDTH, SCREEN_COLORBIT);
+	SetGraphMode(SCREEN_WIDTH,  SCREEN_HEIGHT, SCREEN_COLORBIT);
 
 	//Dxライブラリの初期化処理
 	if (DxLib_Init() == -1)
@@ -55,7 +55,7 @@ LPSTR lpCmdLIne, _In_ int nShowCmd)
 	SceneManager_Initialize(E_TITLE);
 
 	//入力制御機能初期化処理
-	InputControl_initialize();
+	InputControl_Initialize();
 
 	//描画先画面を裏にする
 	SetDrawScreen(DX_SCREEN_BACK);

@@ -62,7 +62,7 @@ int TitleScene_Initialize(void)
 * 引　数：なし
 * 戻り値：なし
 *****************************************************/
-void Titlescene_Update(void)
+void TitleScene_Update(void)
 {
 	//BGMが流れてない時に再生
 	if (CheckSoundMem(sounds[E_TITLE_BGM]) != TRUE)

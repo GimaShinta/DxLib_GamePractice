@@ -266,7 +266,7 @@ void Block_Draw(void)
 * 引　数：なし
 * 戻り値：TRUE(ブロックの生成ができる),FALSE(生成不可)
 *****************************************************/
-int Get_EnnerateFlg(void)
+int Get_GenerateFlg(void)
 {
 	return Generate_Flg;
 }

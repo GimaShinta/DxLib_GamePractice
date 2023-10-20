@@ -49,7 +49,7 @@ void ranking_input_name_draw(void);    //名前入力描画処理
 * 引　数：なし
 * 戻り値：エラー情報(-1：異常有,-1以外：正常終了)
 *****************************************************/
-int RankingScene_Initialeze(void)
+int RankingScene_Initialize(void)
 {
 	int ret = 0;
 

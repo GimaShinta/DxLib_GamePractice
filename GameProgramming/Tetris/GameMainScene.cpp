@@ -99,7 +99,7 @@ void GameMainScene_Draw(void)
 * 引　数：なし
 * 戻り値：なし
 *****************************************************/
-int Get_Scoer(void)
+int Get_Score(void)
 {
 	return Score;
 }

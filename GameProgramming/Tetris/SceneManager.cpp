@@ -70,7 +70,7 @@ void SceneManager_Update(void)
 {
 	//前フレームとゲームモードが違っていたらシーンを切り替える
 	if (game_mode != next_mode)
-	{
+	{  
 		SceneManager_Initialize(next_mode);
 	}
 

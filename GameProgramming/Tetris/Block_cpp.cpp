@@ -445,7 +445,7 @@ void turn_block(int clockwise)
 			{
 				for (j = 0; j < BLOCK_TROUT_SIZE; j++)
 				{
-					temp[j][3 - 1] = DropBlock[i][j];
+					temp[j][3 - i] = DropBlock[i][j];
 				}
 			}
 		}
